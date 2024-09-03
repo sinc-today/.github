@@ -1,0 +1,33 @@
+name: 📘 User Story / Feature
+description: Create a new User Story or Feature
+title: "📘 User Story: [Title]"
+#labels: [user-story]
+body:
+  - type: textarea
+    id: story-statement
+    attributes:
+      label: Story Statement
+      description: "Provide the user story or feature description."
+      placeholder: "As a [type of user], I want [an action] so that [a benefit/a value is added]."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: "List the acceptance criteria for this story."
+      placeholder: "Enter acceptance criteria..."
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: "List any dependencies for this story"
+      placeholder: "Enter related tickets..."
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: "Additional notes if any"
+      placeholder: "Enter additional notes..."

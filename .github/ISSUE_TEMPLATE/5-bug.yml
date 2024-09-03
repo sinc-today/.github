@@ -1,0 +1,45 @@
+name: 🐛 Bug
+description: Create a new Bug report
+title: "🐛 Bug: [Title]"
+labels: [bug]
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: "Describe the bug in detail."
+      placeholder: "Describe the bug..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: "Provide steps to reproduce the bug."
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: "Describe what you expected to happen."
+      placeholder: "Explain the expected behavior..."
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: "If applicable, add screenshots to help explain your problem"
+      placeholder: "Add some screenshots"
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: "Provide details about the environment in which the bug was encountered"
+      placeholder: "Explain which, Device, Browser, Version you are using"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: "Additional notes if any"
+      placeholder: "Enter additional notes..."

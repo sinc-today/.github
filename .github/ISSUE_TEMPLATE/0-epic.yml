@@ -1,0 +1,36 @@
+name: 🌟 Epic
+description: Create a new Epic
+title: "🌟 Epic: [Title]"
+#labels: ["Type: epic"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Epic Summary\nProvide a brief description of what this epic is about."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Epic Summary
+      description: "Provide a brief description of the epic."
+      placeholder: "Describe the epic..."
+    validations:
+      required: true
+  - type: textarea
+    id: business-value
+    attributes:
+      label: Business Value
+      description: "Explain the business value this epic will provide."
+      placeholder: "Describe the business value..."
+    validations:
+      required: true
+  - type: textarea
+    id: additional-criteria
+    attributes:
+      label: Additional Acceptance Criteria
+      description: "List any acceptance criteria for this story."
+      placeholder: "Enter acceptance criteria..."
+  - type: textarea
+    id: epic-breakdown
+    attributes:
+      label: Epic Breakdown
+      description: "List the breakdown of this epic, including links to user stories or features."
+      placeholder: "List the breakdown..."

@@ -1,0 +1,5 @@
+- Feature or User Story – for product features (functional or non-functional)
+- Bug – for errors and unintended behavior
+- Refactoring – for architectural improvements and the like
+- Task – for maintenance work 
+- and optionally Sub-Task – for breaking down any of the other issue types

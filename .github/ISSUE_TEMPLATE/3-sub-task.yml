@@ -1,0 +1,33 @@
+name: 🔎 Sub-Task
+description: Create a new Sub-Task
+title: "🔎 Sub-Task: [Title]"
+#labels: [sub-task]
+body:
+  - type: textarea
+    id: subtask-description
+    attributes:
+      label: Sub-Task Description
+      description: "Provide a detailed description of the sub-task."
+      placeholder: "Describe the sub-task..."
+    validations:
+      required: true
+  - type: textarea
+    id: parent-task
+    attributes:
+      label: Parent Task
+      description: "Link to the parent task."
+      placeholder: "Link to the parent task..."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: "List the acceptance criteria for this sub-task."
+      placeholder: "Enter acceptance criteria..."
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: "Additional notes if any"
+      placeholder: "Enter additional notes..."
