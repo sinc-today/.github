@@ -1,0 +1,28 @@
+name: 🔧 Enhancement
+description: Propose a new enhancement or refactoring task.
+title: "🔧 Enhancement: [Title]"
+body:
+  - type: textarea
+    id: enhancement-objective
+    attributes:
+      label: Enhancement Objective
+      description: "Clearly explain the purpose and goal of this enhancement or refactoring."
+      placeholder: "Describe the objective and why it is necessary."
+  - type: textarea
+    id: affected-code-areas
+    attributes:
+      label: Affected Code Areas
+      description: "Identify the parts of the codebase that will be impacted by this change. Include specific files, modules, or components."
+      placeholder: "List affected code areas or provide links to relevant parts of the codebase."
+  - type: textarea
+    id: expected-benefits
+    attributes:
+      label: Expected Benefits
+      description: "Outline the benefits this enhancement or refactoring will bring, such as performance improvements, code readability, or maintainability."
+      placeholder: "Describe the anticipated outcomes and benefits."
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Provide any extra information or context that might be relevant to the enhancement."
+      placeholder: "Include any additional context or details if necessary."
