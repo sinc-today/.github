@@ -1,0 +1,26 @@
+name: ✅ Feature
+description: Propose the creation of a new feature.
+title: "✅ Feature: [Title]"
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: "Provide a comprehensive description of the feature, including its purpose and functionality."
+      placeholder: "Describe the feature in detail, including what it should do and why it's needed."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: "Clearly outline the specific criteria that must be met for the feature to be considered complete."
+      placeholder: "List the conditions or outcomes that define the successful implementation of this feature."
+    validations:
+      required: true
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Include any additional information or context relevant to this feature."
+      placeholder: "Provide extra details, edge cases, or anything else that might help in understanding the feature."

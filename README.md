@@ -1,16 +1,24 @@
-# Issues
-This repos allows us to maintain our issues at a centralized place.
+# Guidelines for Creating an Issue
 
-## Definition of Readiness
-- [ ] Is the issue labeled with a `type` label (e.g. for story or task)?
-- [ ] If it's a `task`, `bug` or something similar coming below stories ("level 3"): Is it labelled with an `area`?
-- [ ] Is it assigned to at least one person?
-- [ ] Is it assigned to a project board?
-- [ ] If it's a `story` and there is an `epic` for it - does the `epic` refer to the `story`?
-- [ ] If it's a `task` or `bug` and there is a story for it - does the `story` refer to the `task`/`bug`?
+## 1. Labeling
+- Prefix-based labels (e.g., `Target: Frontend`, `Target: Backend`, `Target: Mobile`) are **exclusive** within their category. This means a single ticket should not have more than one `Target` label.
+- If you feel the need for multiple labels from the same prefix (e.g., both `Target: Frontend` and `Target: Backend`), it indicates that the issue should likely be split into multiple tickets. For example:
+  - One ticket for `Target: Frontend`
+  - Another for `Target: Backend`
 
-## Other Notes
+## 2. Templates
+- Always use the provided issue templates. These templates are continuously improved based on team feedback, and using them ensures consistency and streamlines the issue-creation process.
 
-- Prefix labels (i.e. `area: ...` or `type: ...`) are exclusive for their prefix: there can't be two `areas` or two `types` for a single ticket. If need for that arises, it's a hint that a ticket should be split further, e.g. a story into one ticket with `type: task`+`area: frontend` and another one with `type: task`+`area: backend`.
-- Use the templates - we want to improve incrementally them based on our experiences with them.
-- While the emoji and type in the issue title help to increase the readability - and therefore should be kept -, they don't replace the labels. So for example `🐛 Bug` in the title helps, but `type: bug` must still be assigned.
+## 3. Issue Titles
+- Including emojis and keywords (e.g., `✅ Feature`) in the title enhances readability. However, **this does not replace the use of labels**. For example, while `✅ Feature` in the title is helpful, you must still assign the corresponding label like `Type: Feature` to maintain proper categorization.
+
+---
+
+# Contributing to the Issue
+
+## 1. Branch & Commit Naming
+- When naming a branch, always include the issue ID that the branch is linked to. For example: `1-create-event`. 
+- Similarly, ensure commit messages are descriptive and reference the issue, like this example: `#1 Convert event flow to steppers`. This practice helps automatically link the branch and pull request to the corresponding issue.
+
+## 2. Manually Linking the Issue
+- After creating a branch, you can manually link it to an issue by navigating to the issue page. In the right-hand sidebar, under the `Development` section, you can link the branch to the issue to create a direct association.
